@@ -14,5 +14,6 @@
           <h3><%= skill.skill %></h3>
 
           <p><%= skill.level.toLowerCase() !== 'beginner' ? "I have experience creating programs with this skill." : "I am learning to create programs with this skill." %></p>
+          <a href="/skills/<%= skillNum - 1 %>/edit">Edit Skill</a>
 </body>
 </html>

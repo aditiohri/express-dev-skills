@@ -9,7 +9,8 @@ const skills = [
       getAll,
       getOne,
       create,
-      deleteOne
+      deleteOne,
+      update
   };
 
   function getAll() {
@@ -26,4 +27,8 @@ const skills = [
 
   function deleteOne(id) {
     skills.splice(id, 1);
+  }
+
+  function update(id, skill) {
+    skills.splice(id, 1, skill)
   }
