@@ -13,10 +13,10 @@
         <h1>Edit Skill</h1>
         <form action="/skills/<%= idx %>?_method=PUT" method="POST" autocomplete="off">
           <label for="skill">
-            <input type="text" name="skill" placeholder="<%= skill.skill %>">
+            <input type="text" name="skill" placeholder="<%= skill.skill %>" value="<%= skill.skill %>">
           </label>
           <label for="level">
-            <input type="text" name="level" placeholder="<%= skill.level %>">
+            <input type="text" name="level" placeholder="<%= skill.level %>" value="<%= skill.level %>">
           </label>
           <button type="submit">Save Skill</button>
         </form>
